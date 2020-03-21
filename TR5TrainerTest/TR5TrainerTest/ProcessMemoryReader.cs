@@ -165,6 +165,9 @@ namespace TR5TrainerTest
             Log("Allocating {0} bytes for {1}[{2}]", size, typeof(T).Name, len);
             var buf = Marshal.AllocHGlobal(size);
 
+            if (len < 0) 
+                return null;
+
             var arr = new T[len];
 
             Log("Reading from 0x{0:X8}", (int)addr);

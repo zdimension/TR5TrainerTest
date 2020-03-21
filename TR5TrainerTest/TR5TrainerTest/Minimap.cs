@@ -16,6 +16,8 @@ namespace TR5TrainerTest
             var rptr = (room_info*)MainWindow.pmr.ReadUInt32((byte*) 0x875154) + room;
             var rm = MainWindow.pmr.ReadStruct<room_info>((byte*) rptr);
             var fd = MainWindow.pmr.ReadStructArray<FLOOR_INFO>((byte*)rm.floor, rm.x_size * rm.y_size);
+            if (fd == null)
+                return default;
             var fdaptr = (short*)MainWindow.pmr.ReadUInt32((byte*) 0x875168);
             var bmp = new Bitmap(rm.x_size * 14 + 1, rm.y_size * 14 + 1);
             var doors = new List<(int x, int y, int r)>();

@@ -190,19 +190,34 @@ namespace TR5TrainerTest
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool GetWindowRect(HandleRef hWnd, out RECT lpRect);
 
-        [StructLayout(LayoutKind.Sequential)]
-        public struct RECT
+        string Disp(D3DMATRIX m)
         {
-            public int Left;        // x position of upper-left corner
-            public int Top;         // y position of upper-left corner
-            public int Right;       // x position of lower-right corner
-            public int Bottom;      // y position of lower-right corner
+            return $@"{m._11:F3} {m._12:F3} {m._13:F3} {m._14:F3}
+{m._21:F3} {m._22:F3} {m._23:F3} {m._24:F3}
+{m._31:F3} {m._32:F3} {m._33:F3} {m._34:F3}
+{m._41:F3} {m._42:F3} {m._43:F3} {m._44:F3}";
         }
 
+        void RefreshApp()
+        {
+            var app = pmr.ReadStruct<WINAPP>((byte*) 0xd9ab38);
+            rtbViewMatrix.Text = "ViewMatrix\n" + Disp(app.ViewMatrix);
+            rtbWorldMatrix.Text = "WorldMatrix\n" + Disp(app.WorldMatrix);
+            rtbProjMatrix.Text = "Projection\n" + Disp(pmr.ReadStruct<D3DMATRIX>((byte*)0xd9aad0));
+            rtbW2VMatrix.Text = "W2V\n" + Disp(pmr.ReadStruct<D3DMATRIX>((byte*)0x57a0f0));
+
+            var verts = pmr.ReadStructArray<D3DTLVERTEX>((byte*) 0x7dffe8, 10);
+            var res = "";
+            foreach (var v in verts)
+                res += $"{v.sx:F3} {v.sy:F3} {v.sz:F3}\n";
+            rtbVert.Text = res;
+        }
 
         void RefreshData()
         {
             if (btnAttach.Text != "Detach") return;
+
+            RefreshApp();
 
             var lara = pmr.ReadStruct<lara_info>((byte*) 0xe5bd60);
 

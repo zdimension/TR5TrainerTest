@@ -51,7 +51,10 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -60,6 +63,12 @@
             this.cbxAutoRefresh = new System.Windows.Forms.CheckBox();
             this.btnRefreshData = new System.Windows.Forms.Button();
             this.tmrRefresh = new System.Windows.Forms.Timer(this.components);
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.rtbViewMatrix = new System.Windows.Forms.RichTextBox();
+            this.rtbWorldMatrix = new System.Windows.Forms.RichTextBox();
+            this.rtbProjMatrix = new System.Windows.Forms.RichTextBox();
+            this.rtbW2VMatrix = new System.Windows.Forms.RichTextBox();
             this.fieldCtrl20 = new TR5TrainerTest.FieldCtrl();
             this.fcSmallMedi = new TR5TrainerTest.FieldCtrl();
             this.fcBigMedi = new TR5TrainerTest.FieldCtrl();
@@ -85,6 +94,7 @@
             this.fcLaraPosY = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl7 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl70 = new TR5TrainerTest.FieldCtrl();
+            this.fieldCtrl133 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl43 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl24 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl25 = new TR5TrainerTest.FieldCtrl();
@@ -109,6 +119,10 @@
             this.fieldCtrl29 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl30 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl22 = new TR5TrainerTest.FieldCtrl();
+            this.fieldCtrl132 = new TR5TrainerTest.FieldCtrl();
+            this.fieldCtrl131 = new TR5TrainerTest.FieldCtrl();
+            this.fieldCtrl130 = new TR5TrainerTest.FieldCtrl();
+            this.fieldCtrl129 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl85 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl84 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl83 = new TR5TrainerTest.FieldCtrl();
@@ -124,6 +138,7 @@
             this.fieldCtrl73 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl72 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl71 = new TR5TrainerTest.FieldCtrl();
+            this.fieldCtrl128 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl69 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl68 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl67 = new TR5TrainerTest.FieldCtrl();
@@ -188,8 +203,6 @@
             this.fieldCtrl104 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl103 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl102 = new TR5TrainerTest.FieldCtrl();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.fieldCtrl13 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl14 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl15 = new TR5TrainerTest.FieldCtrl();
@@ -201,14 +214,7 @@
             this.fieldCtrl51 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl126 = new TR5TrainerTest.FieldCtrl();
             this.fieldCtrl127 = new TR5TrainerTest.FieldCtrl();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.fieldCtrl128 = new TR5TrainerTest.FieldCtrl();
-            this.fieldCtrl129 = new TR5TrainerTest.FieldCtrl();
-            this.fieldCtrl130 = new TR5TrainerTest.FieldCtrl();
-            this.fieldCtrl131 = new TR5TrainerTest.FieldCtrl();
-            this.fieldCtrl132 = new TR5TrainerTest.FieldCtrl();
-            this.fieldCtrl133 = new TR5TrainerTest.FieldCtrl();
-            this.button2 = new System.Windows.Forms.Button();
+            this.rtbVert = new System.Windows.Forms.RichTextBox();
             this.tcMain.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -227,8 +233,10 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tabPage9.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -350,7 +358,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(875, 363);
+            this.tabPage2.Size = new System.Drawing.Size(867, 355);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Lara collision";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -404,7 +412,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(869, 357);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(861, 351);
             this.tableLayoutPanel2.TabIndex = 34;
             // 
             // tabPage3
@@ -414,7 +422,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(875, 363);
+            this.tabPage3.Size = new System.Drawing.Size(867, 355);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Minimap";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -424,7 +432,7 @@
             this.pbMinimap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbMinimap.Location = new System.Drawing.Point(207, 3);
             this.pbMinimap.Name = "pbMinimap";
-            this.pbMinimap.Size = new System.Drawing.Size(665, 357);
+            this.pbMinimap.Size = new System.Drawing.Size(657, 351);
             this.pbMinimap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbMinimap.TabIndex = 0;
             this.pbMinimap.TabStop = false;
@@ -437,7 +445,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(204, 357);
+            this.panel2.Size = new System.Drawing.Size(204, 351);
             this.panel2.TabIndex = 1;
             // 
             // button1
@@ -509,7 +517,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(861, 349);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(861, 351);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // tabPage5
@@ -518,7 +526,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(875, 363);
+            this.tabPage5.Size = new System.Drawing.Size(867, 355);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Camera";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -572,7 +580,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(869, 357);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(861, 351);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tabPage6
@@ -627,7 +635,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(861, 349);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(861, 351);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // tabPage7
@@ -636,7 +644,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(875, 363);
+            this.tabPage7.Size = new System.Drawing.Size(867, 355);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Puzzle & keys";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -690,7 +698,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(869, 357);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(861, 351);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
             // tabPage8
@@ -699,7 +707,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(875, 363);
+            this.tabPage8.Size = new System.Drawing.Size(867, 355);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Lara rotation";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -740,8 +748,20 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(869, 357);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(861, 351);
             this.tableLayoutPanel7.TabIndex = 3;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.tableLayoutPanel8);
+            this.tabPage9.Controls.Add(this.tableLayoutPanel9);
+            this.tabPage9.Location = new System.Drawing.Point(4, 24);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(867, 355);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Render";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -762,6 +782,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(875, 100);
             this.panel1.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(4, 62);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(86, 32);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "All weapons";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(778, 36);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(93, 19);
+            this.checkBox4.TabIndex = 6;
+            this.checkBox4.Text = "Lock camera";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
@@ -843,6 +883,80 @@
             // 
             this.tmrRefresh.Interval = 5;
             this.tmrRefresh.Tick += new System.EventHandler(this.tmrRefresh_Tick);
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 4;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.Controls.Add(this.rtbW2VMatrix, 3, 0);
+            this.tableLayoutPanel9.Controls.Add(this.rtbProjMatrix, 2, 0);
+            this.tableLayoutPanel9.Controls.Add(this.rtbWorldMatrix, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.rtbViewMatrix, 0, 0);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 1;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(861, 100);
+            this.tableLayoutPanel9.TabIndex = 5;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.rtbVert, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 103);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 2;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(861, 249);
+            this.tableLayoutPanel8.TabIndex = 6;
+            // 
+            // rtbViewMatrix
+            // 
+            this.rtbViewMatrix.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbViewMatrix.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbViewMatrix.Location = new System.Drawing.Point(3, 3);
+            this.rtbViewMatrix.Name = "rtbViewMatrix";
+            this.rtbViewMatrix.Size = new System.Drawing.Size(209, 94);
+            this.rtbViewMatrix.TabIndex = 0;
+            this.rtbViewMatrix.Text = "";
+            // 
+            // rtbWorldMatrix
+            // 
+            this.rtbWorldMatrix.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbWorldMatrix.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbWorldMatrix.Location = new System.Drawing.Point(218, 3);
+            this.rtbWorldMatrix.Name = "rtbWorldMatrix";
+            this.rtbWorldMatrix.Size = new System.Drawing.Size(209, 94);
+            this.rtbWorldMatrix.TabIndex = 1;
+            this.rtbWorldMatrix.Text = "";
+            // 
+            // rtbProjMatrix
+            // 
+            this.rtbProjMatrix.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbProjMatrix.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbProjMatrix.Location = new System.Drawing.Point(433, 3);
+            this.rtbProjMatrix.Name = "rtbProjMatrix";
+            this.rtbProjMatrix.Size = new System.Drawing.Size(209, 94);
+            this.rtbProjMatrix.TabIndex = 2;
+            this.rtbProjMatrix.Text = "";
+            // 
+            // rtbW2VMatrix
+            // 
+            this.rtbW2VMatrix.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbW2VMatrix.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbW2VMatrix.Location = new System.Drawing.Point(648, 3);
+            this.rtbW2VMatrix.Name = "rtbW2VMatrix";
+            this.rtbW2VMatrix.Size = new System.Drawing.Size(210, 94);
+            this.rtbW2VMatrix.TabIndex = 3;
+            this.rtbW2VMatrix.Text = "";
             // 
             // fieldCtrl20
             // 
@@ -1245,6 +1359,22 @@
             this.fieldCtrl70.Type = TR5TrainerTest.FieldType.Int16;
             this.fieldCtrl70.Value = ((long)(0));
             // 
+            // fieldCtrl133
+            // 
+            this.fieldCtrl133.Address = "0xe5bf04";
+            this.fieldCtrl133.Bit = -1;
+            this.fieldCtrl133.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fieldCtrl133.FieldName = "Sprint timer";
+            this.fieldCtrl133.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fieldCtrl133.Format = null;
+            this.fieldCtrl133.Location = new System.Drawing.Point(3, 307);
+            this.fieldCtrl133.Name = "fieldCtrl133";
+            this.fieldCtrl133.Size = new System.Drawing.Size(281, 39);
+            this.fieldCtrl133.Struct = "";
+            this.fieldCtrl133.TabIndex = 25;
+            this.fieldCtrl133.Type = TR5TrainerTest.FieldType.UInt16;
+            this.fieldCtrl133.Value = ((long)(0));
+            // 
             // fieldCtrl43
             // 
             this.fieldCtrl43.Address = "0xe5bc20";
@@ -1253,9 +1383,9 @@
             this.fieldCtrl43.FieldName = "Radius";
             this.fieldCtrl43.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl43.Format = null;
-            this.fieldCtrl43.Location = new System.Drawing.Point(581, 311);
+            this.fieldCtrl43.Location = new System.Drawing.Point(577, 304);
             this.fieldCtrl43.Name = "fieldCtrl43";
-            this.fieldCtrl43.Size = new System.Drawing.Size(285, 43);
+            this.fieldCtrl43.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl43.Struct = "COLL_INFO.radius";
             this.fieldCtrl43.TabIndex = 33;
             this.fieldCtrl43.Type = TR5TrainerTest.FieldType.Int32;
@@ -1271,7 +1401,7 @@
             this.fieldCtrl24.Format = null;
             this.fieldCtrl24.Location = new System.Drawing.Point(3, 3);
             this.fieldCtrl24.Name = "fieldCtrl24";
-            this.fieldCtrl24.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl24.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl24.Struct = "COLL_INFO.mid_floor";
             this.fieldCtrl24.TabIndex = 10;
             this.fieldCtrl24.Type = TR5TrainerTest.FieldType.Int32;
@@ -1285,9 +1415,9 @@
             this.fieldCtrl25.FieldName = "Mid ceiling";
             this.fieldCtrl25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl25.Format = null;
-            this.fieldCtrl25.Location = new System.Drawing.Point(3, 47);
+            this.fieldCtrl25.Location = new System.Drawing.Point(3, 46);
             this.fieldCtrl25.Name = "fieldCtrl25";
-            this.fieldCtrl25.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl25.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl25.Struct = "COLL_INFO.mid_ceiling";
             this.fieldCtrl25.TabIndex = 13;
             this.fieldCtrl25.Type = TR5TrainerTest.FieldType.Int32;
@@ -1301,9 +1431,9 @@
             this.fieldCtrl26.FieldName = "Mid type";
             this.fieldCtrl26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl26.Format = null;
-            this.fieldCtrl26.Location = new System.Drawing.Point(3, 91);
+            this.fieldCtrl26.Location = new System.Drawing.Point(3, 89);
             this.fieldCtrl26.Name = "fieldCtrl26";
-            this.fieldCtrl26.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl26.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl26.Struct = "COLL_INFO.mid_type";
             this.fieldCtrl26.TabIndex = 14;
             this.fieldCtrl26.Type = TR5TrainerTest.FieldType.Int32;
@@ -1317,9 +1447,9 @@
             this.fieldCtrl33.FieldName = "Right floor";
             this.fieldCtrl33.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl33.Format = null;
-            this.fieldCtrl33.Location = new System.Drawing.Point(3, 135);
+            this.fieldCtrl33.Location = new System.Drawing.Point(3, 132);
             this.fieldCtrl33.Name = "fieldCtrl33";
-            this.fieldCtrl33.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl33.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl33.Struct = "COLL_INFO.right_floor";
             this.fieldCtrl33.TabIndex = 19;
             this.fieldCtrl33.Type = TR5TrainerTest.FieldType.Int32;
@@ -1333,9 +1463,9 @@
             this.fieldCtrl32.FieldName = "Right ceiling";
             this.fieldCtrl32.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl32.Format = null;
-            this.fieldCtrl32.Location = new System.Drawing.Point(3, 179);
+            this.fieldCtrl32.Location = new System.Drawing.Point(3, 175);
             this.fieldCtrl32.Name = "fieldCtrl32";
-            this.fieldCtrl32.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl32.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl32.Struct = "COLL_INFO.right_ceiling";
             this.fieldCtrl32.TabIndex = 20;
             this.fieldCtrl32.Type = TR5TrainerTest.FieldType.Int32;
@@ -1349,9 +1479,9 @@
             this.fieldCtrl31.FieldName = "Right type";
             this.fieldCtrl31.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl31.Format = null;
-            this.fieldCtrl31.Location = new System.Drawing.Point(3, 223);
+            this.fieldCtrl31.Location = new System.Drawing.Point(3, 218);
             this.fieldCtrl31.Name = "fieldCtrl31";
-            this.fieldCtrl31.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl31.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl31.Struct = "COLL_INFO.right_type";
             this.fieldCtrl31.TabIndex = 21;
             this.fieldCtrl31.Type = TR5TrainerTest.FieldType.Int32;
@@ -1365,9 +1495,9 @@
             this.fieldCtrl42.FieldName = "Bad pos";
             this.fieldCtrl42.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl42.Format = null;
-            this.fieldCtrl42.Location = new System.Drawing.Point(3, 267);
+            this.fieldCtrl42.Location = new System.Drawing.Point(3, 261);
             this.fieldCtrl42.Name = "fieldCtrl42";
-            this.fieldCtrl42.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl42.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl42.Struct = "COLL_INFO.bad_pos";
             this.fieldCtrl42.TabIndex = 28;
             this.fieldCtrl42.Type = TR5TrainerTest.FieldType.Int32;
@@ -1381,9 +1511,9 @@
             this.fieldCtrl45.FieldName = "Collision type";
             this.fieldCtrl45.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl45.Format = null;
-            this.fieldCtrl45.Location = new System.Drawing.Point(3, 311);
+            this.fieldCtrl45.Location = new System.Drawing.Point(3, 304);
             this.fieldCtrl45.Name = "fieldCtrl45";
-            this.fieldCtrl45.Size = new System.Drawing.Size(283, 43);
+            this.fieldCtrl45.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl45.Struct = "COLL_INFO.coll_type";
             this.fieldCtrl45.TabIndex = 31;
             this.fieldCtrl45.Type = TR5TrainerTest.FieldType.Int16;
@@ -1397,9 +1527,9 @@
             this.fieldCtrl44.FieldName = "Facing";
             this.fieldCtrl44.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl44.Format = null;
-            this.fieldCtrl44.Location = new System.Drawing.Point(292, 311);
+            this.fieldCtrl44.Location = new System.Drawing.Point(290, 304);
             this.fieldCtrl44.Name = "fieldCtrl44";
-            this.fieldCtrl44.Size = new System.Drawing.Size(283, 43);
+            this.fieldCtrl44.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl44.Struct = "COLL_INFO.facing";
             this.fieldCtrl44.TabIndex = 32;
             this.fieldCtrl44.Type = TR5TrainerTest.FieldType.Int16;
@@ -1413,9 +1543,9 @@
             this.fieldCtrl41.FieldName = "Bad neg";
             this.fieldCtrl41.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl41.Format = null;
-            this.fieldCtrl41.Location = new System.Drawing.Point(292, 267);
+            this.fieldCtrl41.Location = new System.Drawing.Point(290, 261);
             this.fieldCtrl41.Name = "fieldCtrl41";
-            this.fieldCtrl41.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl41.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl41.Struct = "COLL_INFO.bad_neg";
             this.fieldCtrl41.TabIndex = 29;
             this.fieldCtrl41.Type = TR5TrainerTest.FieldType.Int32;
@@ -1429,9 +1559,9 @@
             this.fieldCtrl36.FieldName = "Left floor 2";
             this.fieldCtrl36.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl36.Format = null;
-            this.fieldCtrl36.Location = new System.Drawing.Point(292, 135);
+            this.fieldCtrl36.Location = new System.Drawing.Point(290, 132);
             this.fieldCtrl36.Name = "fieldCtrl36";
-            this.fieldCtrl36.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl36.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl36.Struct = "COLL_INFO.left_floor2";
             this.fieldCtrl36.TabIndex = 22;
             this.fieldCtrl36.Type = TR5TrainerTest.FieldType.Int32;
@@ -1445,9 +1575,9 @@
             this.fieldCtrl35.FieldName = "Left ceiling 2";
             this.fieldCtrl35.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl35.Format = null;
-            this.fieldCtrl35.Location = new System.Drawing.Point(292, 179);
+            this.fieldCtrl35.Location = new System.Drawing.Point(290, 175);
             this.fieldCtrl35.Name = "fieldCtrl35";
-            this.fieldCtrl35.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl35.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl35.Struct = "COLL_INFO.left_ceiling2";
             this.fieldCtrl35.TabIndex = 23;
             this.fieldCtrl35.Type = TR5TrainerTest.FieldType.Int32;
@@ -1461,9 +1591,9 @@
             this.fieldCtrl34.FieldName = "Left type 2";
             this.fieldCtrl34.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl34.Format = null;
-            this.fieldCtrl34.Location = new System.Drawing.Point(292, 223);
+            this.fieldCtrl34.Location = new System.Drawing.Point(290, 218);
             this.fieldCtrl34.Name = "fieldCtrl34";
-            this.fieldCtrl34.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl34.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl34.Struct = "COLL_INFO.left_type2";
             this.fieldCtrl34.TabIndex = 24;
             this.fieldCtrl34.Type = TR5TrainerTest.FieldType.Int32;
@@ -1477,9 +1607,9 @@
             this.fieldCtrl28.FieldName = "Front ceiling";
             this.fieldCtrl28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl28.Format = null;
-            this.fieldCtrl28.Location = new System.Drawing.Point(292, 47);
+            this.fieldCtrl28.Location = new System.Drawing.Point(290, 46);
             this.fieldCtrl28.Name = "fieldCtrl28";
-            this.fieldCtrl28.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl28.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl28.Struct = "COLL_INFO.front_ceiling";
             this.fieldCtrl28.TabIndex = 15;
             this.fieldCtrl28.Type = TR5TrainerTest.FieldType.Int32;
@@ -1493,9 +1623,9 @@
             this.fieldCtrl27.FieldName = "Front type";
             this.fieldCtrl27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl27.Format = null;
-            this.fieldCtrl27.Location = new System.Drawing.Point(292, 91);
+            this.fieldCtrl27.Location = new System.Drawing.Point(290, 89);
             this.fieldCtrl27.Name = "fieldCtrl27";
-            this.fieldCtrl27.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl27.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl27.Struct = "COLL_INFO.front_type";
             this.fieldCtrl27.TabIndex = 16;
             this.fieldCtrl27.Type = TR5TrainerTest.FieldType.Int32;
@@ -1509,9 +1639,9 @@
             this.fieldCtrl23.FieldName = "Front floor";
             this.fieldCtrl23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl23.Format = null;
-            this.fieldCtrl23.Location = new System.Drawing.Point(292, 3);
+            this.fieldCtrl23.Location = new System.Drawing.Point(290, 3);
             this.fieldCtrl23.Name = "fieldCtrl23";
-            this.fieldCtrl23.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl23.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl23.Struct = "COLL_INFO.front_floor";
             this.fieldCtrl23.TabIndex = 11;
             this.fieldCtrl23.Type = TR5TrainerTest.FieldType.Int32;
@@ -1525,9 +1655,9 @@
             this.fieldCtrl40.FieldName = "Bad ceiling";
             this.fieldCtrl40.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl40.Format = null;
-            this.fieldCtrl40.Location = new System.Drawing.Point(581, 267);
+            this.fieldCtrl40.Location = new System.Drawing.Point(577, 261);
             this.fieldCtrl40.Name = "fieldCtrl40";
-            this.fieldCtrl40.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl40.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl40.Struct = "COLL_INFO.bad_ceiling";
             this.fieldCtrl40.TabIndex = 30;
             this.fieldCtrl40.Type = TR5TrainerTest.FieldType.Int32;
@@ -1541,9 +1671,9 @@
             this.fieldCtrl37.FieldName = "Right type 2";
             this.fieldCtrl37.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl37.Format = null;
-            this.fieldCtrl37.Location = new System.Drawing.Point(581, 223);
+            this.fieldCtrl37.Location = new System.Drawing.Point(577, 218);
             this.fieldCtrl37.Name = "fieldCtrl37";
-            this.fieldCtrl37.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl37.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl37.Struct = "COLL_INFO.right_type2";
             this.fieldCtrl37.TabIndex = 27;
             this.fieldCtrl37.Type = TR5TrainerTest.FieldType.Int32;
@@ -1557,9 +1687,9 @@
             this.fieldCtrl38.FieldName = "Right ceiling 2";
             this.fieldCtrl38.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl38.Format = null;
-            this.fieldCtrl38.Location = new System.Drawing.Point(581, 179);
+            this.fieldCtrl38.Location = new System.Drawing.Point(577, 175);
             this.fieldCtrl38.Name = "fieldCtrl38";
-            this.fieldCtrl38.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl38.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl38.Struct = "COLL_INFO.right_ceiling2";
             this.fieldCtrl38.TabIndex = 26;
             this.fieldCtrl38.Type = TR5TrainerTest.FieldType.Int32;
@@ -1573,9 +1703,9 @@
             this.fieldCtrl39.FieldName = "Right floor 2";
             this.fieldCtrl39.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl39.Format = null;
-            this.fieldCtrl39.Location = new System.Drawing.Point(581, 135);
+            this.fieldCtrl39.Location = new System.Drawing.Point(577, 132);
             this.fieldCtrl39.Name = "fieldCtrl39";
-            this.fieldCtrl39.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl39.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl39.Struct = "COLL_INFO.right_floor2";
             this.fieldCtrl39.TabIndex = 25;
             this.fieldCtrl39.Type = TR5TrainerTest.FieldType.Int32;
@@ -1589,9 +1719,9 @@
             this.fieldCtrl29.FieldName = "Left type";
             this.fieldCtrl29.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl29.Format = null;
-            this.fieldCtrl29.Location = new System.Drawing.Point(581, 91);
+            this.fieldCtrl29.Location = new System.Drawing.Point(577, 89);
             this.fieldCtrl29.Name = "fieldCtrl29";
-            this.fieldCtrl29.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl29.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl29.Struct = "COLL_INFO.left_type";
             this.fieldCtrl29.TabIndex = 18;
             this.fieldCtrl29.Type = TR5TrainerTest.FieldType.Int32;
@@ -1605,9 +1735,9 @@
             this.fieldCtrl30.FieldName = "Left ceiling";
             this.fieldCtrl30.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl30.Format = null;
-            this.fieldCtrl30.Location = new System.Drawing.Point(581, 47);
+            this.fieldCtrl30.Location = new System.Drawing.Point(577, 46);
             this.fieldCtrl30.Name = "fieldCtrl30";
-            this.fieldCtrl30.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl30.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl30.Struct = "COLL_INFO.left_ceiling";
             this.fieldCtrl30.TabIndex = 17;
             this.fieldCtrl30.Type = TR5TrainerTest.FieldType.Int32;
@@ -1621,13 +1751,77 @@
             this.fieldCtrl22.FieldName = "Left floor";
             this.fieldCtrl22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl22.Format = null;
-            this.fieldCtrl22.Location = new System.Drawing.Point(581, 3);
+            this.fieldCtrl22.Location = new System.Drawing.Point(577, 3);
             this.fieldCtrl22.Name = "fieldCtrl22";
-            this.fieldCtrl22.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl22.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl22.Struct = "COLL_INFO.left_floor";
             this.fieldCtrl22.TabIndex = 12;
             this.fieldCtrl22.Type = TR5TrainerTest.FieldType.Int32;
             this.fieldCtrl22.Value = ((long)(0));
+            // 
+            // fieldCtrl132
+            // 
+            this.fieldCtrl132.Address = "0xe5bd60";
+            this.fieldCtrl132.Bit = -1;
+            this.fieldCtrl132.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fieldCtrl132.FieldName = "Holster";
+            this.fieldCtrl132.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fieldCtrl132.Format = null;
+            this.fieldCtrl132.Location = new System.Drawing.Point(290, 261);
+            this.fieldCtrl132.Name = "fieldCtrl132";
+            this.fieldCtrl132.Size = new System.Drawing.Size(281, 37);
+            this.fieldCtrl132.Struct = "lara_info.holster";
+            this.fieldCtrl132.TabIndex = 19;
+            this.fieldCtrl132.Type = TR5TrainerTest.FieldType.UInt16;
+            this.fieldCtrl132.Value = ((long)(0));
+            // 
+            // fieldCtrl131
+            // 
+            this.fieldCtrl131.Address = "0xe5bd60";
+            this.fieldCtrl131.Bit = -1;
+            this.fieldCtrl131.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fieldCtrl131.FieldName = "Last gun type";
+            this.fieldCtrl131.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fieldCtrl131.Format = null;
+            this.fieldCtrl131.Location = new System.Drawing.Point(3, 261);
+            this.fieldCtrl131.Name = "fieldCtrl131";
+            this.fieldCtrl131.Size = new System.Drawing.Size(281, 37);
+            this.fieldCtrl131.Struct = "lara_info.last_gun_type";
+            this.fieldCtrl131.TabIndex = 18;
+            this.fieldCtrl131.Type = TR5TrainerTest.FieldType.Int16;
+            this.fieldCtrl131.Value = ((long)(0));
+            // 
+            // fieldCtrl130
+            // 
+            this.fieldCtrl130.Address = "0xe5bd60";
+            this.fieldCtrl130.Bit = -1;
+            this.fieldCtrl130.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fieldCtrl130.FieldName = "Request gun type";
+            this.fieldCtrl130.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fieldCtrl130.Format = null;
+            this.fieldCtrl130.Location = new System.Drawing.Point(577, 218);
+            this.fieldCtrl130.Name = "fieldCtrl130";
+            this.fieldCtrl130.Size = new System.Drawing.Size(281, 37);
+            this.fieldCtrl130.Struct = "lara_info.request_gun_type";
+            this.fieldCtrl130.TabIndex = 17;
+            this.fieldCtrl130.Type = TR5TrainerTest.FieldType.Int16;
+            this.fieldCtrl130.Value = ((long)(0));
+            // 
+            // fieldCtrl129
+            // 
+            this.fieldCtrl129.Address = "0xe5bd60";
+            this.fieldCtrl129.Bit = -1;
+            this.fieldCtrl129.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fieldCtrl129.FieldName = "Gun type";
+            this.fieldCtrl129.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fieldCtrl129.Format = null;
+            this.fieldCtrl129.Location = new System.Drawing.Point(290, 218);
+            this.fieldCtrl129.Name = "fieldCtrl129";
+            this.fieldCtrl129.Size = new System.Drawing.Size(281, 37);
+            this.fieldCtrl129.Struct = "lara_info.gun_type";
+            this.fieldCtrl129.TabIndex = 16;
+            this.fieldCtrl129.Type = TR5TrainerTest.FieldType.Int16;
+            this.fieldCtrl129.Value = ((long)(0));
             // 
             // fieldCtrl85
             // 
@@ -1869,6 +2063,22 @@
             this.fieldCtrl71.Type = TR5TrainerTest.FieldType.Byte;
             this.fieldCtrl71.Value = ((long)(0));
             // 
+            // fieldCtrl128
+            // 
+            this.fieldCtrl128.Address = "0xe5bd60";
+            this.fieldCtrl128.Bit = -1;
+            this.fieldCtrl128.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fieldCtrl128.FieldName = "Gun status";
+            this.fieldCtrl128.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fieldCtrl128.Format = null;
+            this.fieldCtrl128.Location = new System.Drawing.Point(3, 218);
+            this.fieldCtrl128.Name = "fieldCtrl128";
+            this.fieldCtrl128.Size = new System.Drawing.Size(281, 37);
+            this.fieldCtrl128.Struct = "lara_info.gun_status";
+            this.fieldCtrl128.TabIndex = 15;
+            this.fieldCtrl128.Type = TR5TrainerTest.FieldType.Int16;
+            this.fieldCtrl128.Value = ((long)(0));
+            // 
             // fieldCtrl69
             // 
             this.fieldCtrl69.Address = "0xeef940";
@@ -1877,9 +2087,9 @@
             this.fieldCtrl69.FieldName = "Timer";
             this.fieldCtrl69.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl69.Format = null;
-            this.fieldCtrl69.Location = new System.Drawing.Point(581, 311);
+            this.fieldCtrl69.Location = new System.Drawing.Point(577, 304);
             this.fieldCtrl69.Name = "fieldCtrl69";
-            this.fieldCtrl69.Size = new System.Drawing.Size(285, 43);
+            this.fieldCtrl69.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl69.Struct = "CAMERA_INFO.timer";
             this.fieldCtrl69.TabIndex = 23;
             this.fieldCtrl69.Type = TR5TrainerTest.FieldType.Int16;
@@ -1893,9 +2103,9 @@
             this.fieldCtrl68.FieldName = "Last";
             this.fieldCtrl68.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl68.Format = "";
-            this.fieldCtrl68.Location = new System.Drawing.Point(581, 267);
+            this.fieldCtrl68.Location = new System.Drawing.Point(577, 261);
             this.fieldCtrl68.Name = "fieldCtrl68";
-            this.fieldCtrl68.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl68.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl68.Struct = "CAMERA_INFO.last";
             this.fieldCtrl68.TabIndex = 22;
             this.fieldCtrl68.Type = TR5TrainerTest.FieldType.Int16;
@@ -1909,9 +2119,9 @@
             this.fieldCtrl67.FieldName = "Number";
             this.fieldCtrl67.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl67.Format = null;
-            this.fieldCtrl67.Location = new System.Drawing.Point(581, 223);
+            this.fieldCtrl67.Location = new System.Drawing.Point(577, 218);
             this.fieldCtrl67.Name = "fieldCtrl67";
-            this.fieldCtrl67.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl67.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl67.Struct = "CAMERA_INFO.number";
             this.fieldCtrl67.TabIndex = 21;
             this.fieldCtrl67.Type = TR5TrainerTest.FieldType.Int16;
@@ -1925,9 +2135,9 @@
             this.fieldCtrl65.FieldName = "Target speed";
             this.fieldCtrl65.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl65.Format = null;
-            this.fieldCtrl65.Location = new System.Drawing.Point(581, 179);
+            this.fieldCtrl65.Location = new System.Drawing.Point(577, 175);
             this.fieldCtrl65.Name = "fieldCtrl65";
-            this.fieldCtrl65.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl65.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl65.Struct = "CAMERA_INFO.targetspeed";
             this.fieldCtrl65.TabIndex = 19;
             this.fieldCtrl65.Type = TR5TrainerTest.FieldType.Int16;
@@ -1941,9 +2151,9 @@
             this.fieldCtrl59.FieldName = "Speed";
             this.fieldCtrl59.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl59.Format = null;
-            this.fieldCtrl59.Location = new System.Drawing.Point(581, 135);
+            this.fieldCtrl59.Location = new System.Drawing.Point(577, 132);
             this.fieldCtrl59.Name = "fieldCtrl59";
-            this.fieldCtrl59.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl59.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl59.Struct = "CAMERA_INFO.speed";
             this.fieldCtrl59.TabIndex = 13;
             this.fieldCtrl59.Type = TR5TrainerTest.FieldType.Int16;
@@ -1957,9 +2167,9 @@
             this.fieldCtrl58.FieldName = "Bounce";
             this.fieldCtrl58.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl58.Format = null;
-            this.fieldCtrl58.Location = new System.Drawing.Point(581, 91);
+            this.fieldCtrl58.Location = new System.Drawing.Point(577, 89);
             this.fieldCtrl58.Name = "fieldCtrl58";
-            this.fieldCtrl58.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl58.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl58.Struct = "CAMERA_INFO.bounce";
             this.fieldCtrl58.TabIndex = 12;
             this.fieldCtrl58.Type = TR5TrainerTest.FieldType.Int32;
@@ -1973,9 +2183,9 @@
             this.fieldCtrl57.FieldName = "Flags";
             this.fieldCtrl57.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl57.Format = null;
-            this.fieldCtrl57.Location = new System.Drawing.Point(581, 47);
+            this.fieldCtrl57.Location = new System.Drawing.Point(577, 46);
             this.fieldCtrl57.Name = "fieldCtrl57";
-            this.fieldCtrl57.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl57.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl57.Struct = "CAMERA_INFO.flags";
             this.fieldCtrl57.TabIndex = 11;
             this.fieldCtrl57.Type = TR5TrainerTest.FieldType.Int32;
@@ -1989,9 +2199,9 @@
             this.fieldCtrl56.FieldName = "Camera type";
             this.fieldCtrl56.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl56.Format = null;
-            this.fieldCtrl56.Location = new System.Drawing.Point(581, 3);
+            this.fieldCtrl56.Location = new System.Drawing.Point(577, 3);
             this.fieldCtrl56.Name = "fieldCtrl56";
-            this.fieldCtrl56.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl56.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl56.Struct = "CAMERA_INFO.type";
             this.fieldCtrl56.TabIndex = 10;
             this.fieldCtrl56.Type = TR5TrainerTest.FieldType.Int32;
@@ -2005,9 +2215,9 @@
             this.fcCamTargetX.FieldName = "Target X";
             this.fcCamTargetX.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fcCamTargetX.Format = null;
-            this.fcCamTargetX.Location = new System.Drawing.Point(292, 3);
+            this.fcCamTargetX.Location = new System.Drawing.Point(290, 3);
             this.fcCamTargetX.Name = "fcCamTargetX";
-            this.fcCamTargetX.Size = new System.Drawing.Size(283, 38);
+            this.fcCamTargetX.Size = new System.Drawing.Size(281, 37);
             this.fcCamTargetX.Struct = "CAMERA_INFO.target+0";
             this.fcCamTargetX.TabIndex = 3;
             this.fcCamTargetX.Type = TR5TrainerTest.FieldType.Int32;
@@ -2023,7 +2233,7 @@
             this.fcCamPosX.Format = null;
             this.fcCamPosX.Location = new System.Drawing.Point(3, 3);
             this.fcCamPosX.Name = "fcCamPosX";
-            this.fcCamPosX.Size = new System.Drawing.Size(283, 38);
+            this.fcCamPosX.Size = new System.Drawing.Size(281, 37);
             this.fcCamPosX.Struct = "CAMERA_INFO.pos+0";
             this.fcCamPosX.TabIndex = 0;
             this.fcCamPosX.Type = TR5TrainerTest.FieldType.Int32;
@@ -2037,9 +2247,9 @@
             this.fcCamPosY.FieldName = "Position Y";
             this.fcCamPosY.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fcCamPosY.Format = null;
-            this.fcCamPosY.Location = new System.Drawing.Point(3, 47);
+            this.fcCamPosY.Location = new System.Drawing.Point(3, 46);
             this.fcCamPosY.Name = "fcCamPosY";
-            this.fcCamPosY.Size = new System.Drawing.Size(283, 38);
+            this.fcCamPosY.Size = new System.Drawing.Size(281, 37);
             this.fcCamPosY.Struct = "CAMERA_INFO.pos+4";
             this.fcCamPosY.TabIndex = 1;
             this.fcCamPosY.Type = TR5TrainerTest.FieldType.Int32;
@@ -2053,9 +2263,9 @@
             this.fcCamPosZ.FieldName = "Position Z";
             this.fcCamPosZ.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fcCamPosZ.Format = null;
-            this.fcCamPosZ.Location = new System.Drawing.Point(3, 91);
+            this.fcCamPosZ.Location = new System.Drawing.Point(3, 89);
             this.fcCamPosZ.Name = "fcCamPosZ";
-            this.fcCamPosZ.Size = new System.Drawing.Size(283, 38);
+            this.fcCamPosZ.Size = new System.Drawing.Size(281, 37);
             this.fcCamPosZ.Struct = "CAMERA_INFO.pos+8";
             this.fcCamPosZ.TabIndex = 2;
             this.fcCamPosZ.Type = TR5TrainerTest.FieldType.Int32;
@@ -2069,9 +2279,9 @@
             this.fcCamTargetY.FieldName = "Target Y";
             this.fcCamTargetY.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fcCamTargetY.Format = null;
-            this.fcCamTargetY.Location = new System.Drawing.Point(292, 47);
+            this.fcCamTargetY.Location = new System.Drawing.Point(290, 46);
             this.fcCamTargetY.Name = "fcCamTargetY";
-            this.fcCamTargetY.Size = new System.Drawing.Size(283, 38);
+            this.fcCamTargetY.Size = new System.Drawing.Size(281, 37);
             this.fcCamTargetY.Struct = "CAMERA_INFO.target+4";
             this.fcCamTargetY.TabIndex = 4;
             this.fcCamTargetY.Type = TR5TrainerTest.FieldType.Int32;
@@ -2085,9 +2295,9 @@
             this.fcCamTargetZ.FieldName = "Target Z";
             this.fcCamTargetZ.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fcCamTargetZ.Format = null;
-            this.fcCamTargetZ.Location = new System.Drawing.Point(292, 91);
+            this.fcCamTargetZ.Location = new System.Drawing.Point(290, 89);
             this.fcCamTargetZ.Name = "fcCamTargetZ";
-            this.fcCamTargetZ.Size = new System.Drawing.Size(283, 38);
+            this.fcCamTargetZ.Size = new System.Drawing.Size(281, 37);
             this.fcCamTargetZ.Struct = "CAMERA_INFO.target+8";
             this.fcCamTargetZ.TabIndex = 5;
             this.fcCamTargetZ.Type = TR5TrainerTest.FieldType.Int32;
@@ -2101,9 +2311,9 @@
             this.fieldCtrl52.FieldName = "Position room";
             this.fieldCtrl52.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl52.Format = null;
-            this.fieldCtrl52.Location = new System.Drawing.Point(3, 135);
+            this.fieldCtrl52.Location = new System.Drawing.Point(3, 132);
             this.fieldCtrl52.Name = "fieldCtrl52";
-            this.fieldCtrl52.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl52.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl52.Struct = "CAMERA_INFO.pos+12";
             this.fieldCtrl52.TabIndex = 6;
             this.fieldCtrl52.Type = TR5TrainerTest.FieldType.Int16;
@@ -2117,9 +2327,9 @@
             this.fieldCtrl53.FieldName = "Position box";
             this.fieldCtrl53.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl53.Format = null;
-            this.fieldCtrl53.Location = new System.Drawing.Point(3, 179);
+            this.fieldCtrl53.Location = new System.Drawing.Point(3, 175);
             this.fieldCtrl53.Name = "fieldCtrl53";
-            this.fieldCtrl53.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl53.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl53.Struct = "CAMERA_INFO.pos+14";
             this.fieldCtrl53.TabIndex = 7;
             this.fieldCtrl53.Type = TR5TrainerTest.FieldType.Int16;
@@ -2133,9 +2343,9 @@
             this.fieldCtrl54.FieldName = "Target room";
             this.fieldCtrl54.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl54.Format = null;
-            this.fieldCtrl54.Location = new System.Drawing.Point(292, 135);
+            this.fieldCtrl54.Location = new System.Drawing.Point(290, 132);
             this.fieldCtrl54.Name = "fieldCtrl54";
-            this.fieldCtrl54.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl54.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl54.Struct = "CAMERA_INFO.target+12";
             this.fieldCtrl54.TabIndex = 8;
             this.fieldCtrl54.Type = TR5TrainerTest.FieldType.Int16;
@@ -2149,9 +2359,9 @@
             this.fieldCtrl55.FieldName = "Target box";
             this.fieldCtrl55.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl55.Format = null;
-            this.fieldCtrl55.Location = new System.Drawing.Point(292, 179);
+            this.fieldCtrl55.Location = new System.Drawing.Point(290, 175);
             this.fieldCtrl55.Name = "fieldCtrl55";
-            this.fieldCtrl55.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl55.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl55.Struct = "CAMERA_INFO.target+14";
             this.fieldCtrl55.TabIndex = 9;
             this.fieldCtrl55.Type = TR5TrainerTest.FieldType.Int16;
@@ -2165,9 +2375,9 @@
             this.fieldCtrl60.FieldName = "Target distance";
             this.fieldCtrl60.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl60.Format = null;
-            this.fieldCtrl60.Location = new System.Drawing.Point(292, 223);
+            this.fieldCtrl60.Location = new System.Drawing.Point(290, 218);
             this.fieldCtrl60.Name = "fieldCtrl60";
-            this.fieldCtrl60.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl60.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl60.Struct = "CAMERA_INFO.target_distance";
             this.fieldCtrl60.TabIndex = 14;
             this.fieldCtrl60.Type = TR5TrainerTest.FieldType.Int32;
@@ -2181,9 +2391,9 @@
             this.fieldCtrl61.FieldName = "Target angle";
             this.fieldCtrl61.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl61.Format = null;
-            this.fieldCtrl61.Location = new System.Drawing.Point(292, 267);
+            this.fieldCtrl61.Location = new System.Drawing.Point(290, 261);
             this.fieldCtrl61.Name = "fieldCtrl61";
-            this.fieldCtrl61.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl61.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl61.Struct = "CAMERA_INFO.target_angle";
             this.fieldCtrl61.TabIndex = 15;
             this.fieldCtrl61.Type = TR5TrainerTest.FieldType.Int16;
@@ -2197,9 +2407,9 @@
             this.fieldCtrl62.FieldName = "Target elevation";
             this.fieldCtrl62.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl62.Format = null;
-            this.fieldCtrl62.Location = new System.Drawing.Point(292, 311);
+            this.fieldCtrl62.Location = new System.Drawing.Point(290, 304);
             this.fieldCtrl62.Name = "fieldCtrl62";
-            this.fieldCtrl62.Size = new System.Drawing.Size(283, 43);
+            this.fieldCtrl62.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl62.Struct = "CAMERA_INFO.target_elevation";
             this.fieldCtrl62.TabIndex = 16;
             this.fieldCtrl62.Type = TR5TrainerTest.FieldType.Int16;
@@ -2213,9 +2423,9 @@
             this.fieldCtrl63.FieldName = "Actual angle";
             this.fieldCtrl63.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl63.Format = null;
-            this.fieldCtrl63.Location = new System.Drawing.Point(3, 267);
+            this.fieldCtrl63.Location = new System.Drawing.Point(3, 261);
             this.fieldCtrl63.Name = "fieldCtrl63";
-            this.fieldCtrl63.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl63.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl63.Struct = "CAMERA_INFO.actual_angle";
             this.fieldCtrl63.TabIndex = 17;
             this.fieldCtrl63.Type = TR5TrainerTest.FieldType.Int16;
@@ -2229,9 +2439,9 @@
             this.fieldCtrl64.FieldName = "Actual elevation";
             this.fieldCtrl64.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl64.Format = null;
-            this.fieldCtrl64.Location = new System.Drawing.Point(3, 311);
+            this.fieldCtrl64.Location = new System.Drawing.Point(3, 304);
             this.fieldCtrl64.Name = "fieldCtrl64";
-            this.fieldCtrl64.Size = new System.Drawing.Size(283, 43);
+            this.fieldCtrl64.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl64.Struct = "CAMERA_INFO.actual_elevation";
             this.fieldCtrl64.TabIndex = 18;
             this.fieldCtrl64.Type = TR5TrainerTest.FieldType.Int16;
@@ -2245,9 +2455,9 @@
             this.fieldCtrl66.FieldName = "Box";
             this.fieldCtrl66.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl66.Format = null;
-            this.fieldCtrl66.Location = new System.Drawing.Point(3, 223);
+            this.fieldCtrl66.Location = new System.Drawing.Point(3, 218);
             this.fieldCtrl66.Name = "fieldCtrl66";
-            this.fieldCtrl66.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl66.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl66.Struct = "CAMERA_INFO.box";
             this.fieldCtrl66.TabIndex = 20;
             this.fieldCtrl66.Type = TR5TrainerTest.FieldType.Int16;
@@ -2503,7 +2713,7 @@
             this.fieldCtrl101.Format = null;
             this.fieldCtrl101.Location = new System.Drawing.Point(290, 293);
             this.fieldCtrl101.Name = "fieldCtrl101";
-            this.fieldCtrl101.Size = new System.Drawing.Size(281, 53);
+            this.fieldCtrl101.Size = new System.Drawing.Size(281, 55);
             this.fieldCtrl101.Struct = "";
             this.fieldCtrl101.TabIndex = 15;
             this.fieldCtrl101.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2517,9 +2727,9 @@
             this.fieldCtrl125.FieldName = "Pickup item 4";
             this.fieldCtrl125.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl125.Format = null;
-            this.fieldCtrl125.Location = new System.Drawing.Point(581, 311);
+            this.fieldCtrl125.Location = new System.Drawing.Point(577, 304);
             this.fieldCtrl125.Name = "fieldCtrl125";
-            this.fieldCtrl125.Size = new System.Drawing.Size(285, 43);
+            this.fieldCtrl125.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl125.Struct = "lara_info.pickupitems";
             this.fieldCtrl125.TabIndex = 23;
             this.fieldCtrl125.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2533,9 +2743,9 @@
             this.fieldCtrl124.FieldName = "Pickup item 3";
             this.fieldCtrl124.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl124.Format = null;
-            this.fieldCtrl124.Location = new System.Drawing.Point(292, 311);
+            this.fieldCtrl124.Location = new System.Drawing.Point(290, 304);
             this.fieldCtrl124.Name = "fieldCtrl124";
-            this.fieldCtrl124.Size = new System.Drawing.Size(283, 43);
+            this.fieldCtrl124.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl124.Struct = "lara_info.pickupitems";
             this.fieldCtrl124.TabIndex = 22;
             this.fieldCtrl124.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2549,9 +2759,9 @@
             this.fieldCtrl123.FieldName = "Pickup item 2";
             this.fieldCtrl123.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl123.Format = null;
-            this.fieldCtrl123.Location = new System.Drawing.Point(3, 311);
+            this.fieldCtrl123.Location = new System.Drawing.Point(3, 304);
             this.fieldCtrl123.Name = "fieldCtrl123";
-            this.fieldCtrl123.Size = new System.Drawing.Size(283, 43);
+            this.fieldCtrl123.Size = new System.Drawing.Size(281, 44);
             this.fieldCtrl123.Struct = "lara_info.pickupitems";
             this.fieldCtrl123.TabIndex = 21;
             this.fieldCtrl123.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2565,9 +2775,9 @@
             this.fieldCtrl122.FieldName = "Pickup item 1";
             this.fieldCtrl122.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl122.Format = null;
-            this.fieldCtrl122.Location = new System.Drawing.Point(581, 267);
+            this.fieldCtrl122.Location = new System.Drawing.Point(577, 261);
             this.fieldCtrl122.Name = "fieldCtrl122";
-            this.fieldCtrl122.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl122.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl122.Struct = "lara_info.pickupitems";
             this.fieldCtrl122.TabIndex = 20;
             this.fieldCtrl122.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2581,9 +2791,9 @@
             this.fieldCtrl121.FieldName = "Key item 8";
             this.fieldCtrl121.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl121.Format = null;
-            this.fieldCtrl121.Location = new System.Drawing.Point(292, 267);
+            this.fieldCtrl121.Location = new System.Drawing.Point(290, 261);
             this.fieldCtrl121.Name = "fieldCtrl121";
-            this.fieldCtrl121.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl121.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl121.Struct = "lara_info.keyitems";
             this.fieldCtrl121.TabIndex = 19;
             this.fieldCtrl121.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2597,9 +2807,9 @@
             this.fieldCtrl120.FieldName = "Key item 7";
             this.fieldCtrl120.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl120.Format = null;
-            this.fieldCtrl120.Location = new System.Drawing.Point(3, 267);
+            this.fieldCtrl120.Location = new System.Drawing.Point(3, 261);
             this.fieldCtrl120.Name = "fieldCtrl120";
-            this.fieldCtrl120.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl120.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl120.Struct = "lara_info.keyitems";
             this.fieldCtrl120.TabIndex = 18;
             this.fieldCtrl120.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2613,9 +2823,9 @@
             this.fieldCtrl119.FieldName = "Key item 6";
             this.fieldCtrl119.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl119.Format = null;
-            this.fieldCtrl119.Location = new System.Drawing.Point(581, 223);
+            this.fieldCtrl119.Location = new System.Drawing.Point(577, 218);
             this.fieldCtrl119.Name = "fieldCtrl119";
-            this.fieldCtrl119.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl119.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl119.Struct = "lara_info.keyitems";
             this.fieldCtrl119.TabIndex = 17;
             this.fieldCtrl119.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2629,9 +2839,9 @@
             this.fieldCtrl118.FieldName = "Key item 5";
             this.fieldCtrl118.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl118.Format = null;
-            this.fieldCtrl118.Location = new System.Drawing.Point(292, 223);
+            this.fieldCtrl118.Location = new System.Drawing.Point(290, 218);
             this.fieldCtrl118.Name = "fieldCtrl118";
-            this.fieldCtrl118.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl118.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl118.Struct = "lara_info.keyitems";
             this.fieldCtrl118.TabIndex = 16;
             this.fieldCtrl118.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2645,9 +2855,9 @@
             this.fieldCtrl117.FieldName = "Key item 4";
             this.fieldCtrl117.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl117.Format = null;
-            this.fieldCtrl117.Location = new System.Drawing.Point(3, 223);
+            this.fieldCtrl117.Location = new System.Drawing.Point(3, 218);
             this.fieldCtrl117.Name = "fieldCtrl117";
-            this.fieldCtrl117.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl117.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl117.Struct = "lara_info.keyitems";
             this.fieldCtrl117.TabIndex = 15;
             this.fieldCtrl117.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2661,9 +2871,9 @@
             this.fieldCtrl116.FieldName = "Key item 3";
             this.fieldCtrl116.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl116.Format = null;
-            this.fieldCtrl116.Location = new System.Drawing.Point(581, 179);
+            this.fieldCtrl116.Location = new System.Drawing.Point(577, 175);
             this.fieldCtrl116.Name = "fieldCtrl116";
-            this.fieldCtrl116.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl116.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl116.Struct = "lara_info.keyitems";
             this.fieldCtrl116.TabIndex = 14;
             this.fieldCtrl116.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2677,9 +2887,9 @@
             this.fieldCtrl115.FieldName = "Key item 2";
             this.fieldCtrl115.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl115.Format = null;
-            this.fieldCtrl115.Location = new System.Drawing.Point(292, 179);
+            this.fieldCtrl115.Location = new System.Drawing.Point(290, 175);
             this.fieldCtrl115.Name = "fieldCtrl115";
-            this.fieldCtrl115.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl115.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl115.Struct = "lara_info.keyitems";
             this.fieldCtrl115.TabIndex = 13;
             this.fieldCtrl115.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2693,9 +2903,9 @@
             this.fieldCtrl114.FieldName = "Key item 1";
             this.fieldCtrl114.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl114.Format = null;
-            this.fieldCtrl114.Location = new System.Drawing.Point(3, 179);
+            this.fieldCtrl114.Location = new System.Drawing.Point(3, 175);
             this.fieldCtrl114.Name = "fieldCtrl114";
-            this.fieldCtrl114.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl114.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl114.Struct = "lara_info.keyitems";
             this.fieldCtrl114.TabIndex = 12;
             this.fieldCtrl114.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2709,9 +2919,9 @@
             this.fieldCtrl113.FieldName = "Puzzle item 12";
             this.fieldCtrl113.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl113.Format = null;
-            this.fieldCtrl113.Location = new System.Drawing.Point(581, 135);
+            this.fieldCtrl113.Location = new System.Drawing.Point(577, 132);
             this.fieldCtrl113.Name = "fieldCtrl113";
-            this.fieldCtrl113.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl113.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl113.Struct = "lara_info.puzzleitems+11";
             this.fieldCtrl113.TabIndex = 11;
             this.fieldCtrl113.Type = TR5TrainerTest.FieldType.Byte;
@@ -2725,9 +2935,9 @@
             this.fieldCtrl112.FieldName = "Puzzle item 11";
             this.fieldCtrl112.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl112.Format = null;
-            this.fieldCtrl112.Location = new System.Drawing.Point(292, 135);
+            this.fieldCtrl112.Location = new System.Drawing.Point(290, 132);
             this.fieldCtrl112.Name = "fieldCtrl112";
-            this.fieldCtrl112.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl112.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl112.Struct = "lara_info.puzzleitems+10";
             this.fieldCtrl112.TabIndex = 10;
             this.fieldCtrl112.Type = TR5TrainerTest.FieldType.Byte;
@@ -2741,9 +2951,9 @@
             this.fieldCtrl111.FieldName = "Puzzle item 10";
             this.fieldCtrl111.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl111.Format = null;
-            this.fieldCtrl111.Location = new System.Drawing.Point(3, 135);
+            this.fieldCtrl111.Location = new System.Drawing.Point(3, 132);
             this.fieldCtrl111.Name = "fieldCtrl111";
-            this.fieldCtrl111.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl111.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl111.Struct = "lara_info.puzzleitems+9";
             this.fieldCtrl111.TabIndex = 9;
             this.fieldCtrl111.Type = TR5TrainerTest.FieldType.Byte;
@@ -2757,9 +2967,9 @@
             this.fieldCtrl110.FieldName = "Puzzle item 9";
             this.fieldCtrl110.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl110.Format = null;
-            this.fieldCtrl110.Location = new System.Drawing.Point(581, 91);
+            this.fieldCtrl110.Location = new System.Drawing.Point(577, 89);
             this.fieldCtrl110.Name = "fieldCtrl110";
-            this.fieldCtrl110.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl110.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl110.Struct = "lara_info.puzzleitems+8";
             this.fieldCtrl110.TabIndex = 8;
             this.fieldCtrl110.Type = TR5TrainerTest.FieldType.Byte;
@@ -2773,9 +2983,9 @@
             this.fieldCtrl109.FieldName = "Puzzle item 8";
             this.fieldCtrl109.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl109.Format = null;
-            this.fieldCtrl109.Location = new System.Drawing.Point(292, 91);
+            this.fieldCtrl109.Location = new System.Drawing.Point(290, 89);
             this.fieldCtrl109.Name = "fieldCtrl109";
-            this.fieldCtrl109.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl109.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl109.Struct = "lara_info.puzzleitems+7";
             this.fieldCtrl109.TabIndex = 7;
             this.fieldCtrl109.Type = TR5TrainerTest.FieldType.Byte;
@@ -2789,9 +2999,9 @@
             this.fieldCtrl108.FieldName = "Puzzle item 7";
             this.fieldCtrl108.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl108.Format = null;
-            this.fieldCtrl108.Location = new System.Drawing.Point(3, 91);
+            this.fieldCtrl108.Location = new System.Drawing.Point(3, 89);
             this.fieldCtrl108.Name = "fieldCtrl108";
-            this.fieldCtrl108.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl108.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl108.Struct = "lara_info.puzzleitems+6";
             this.fieldCtrl108.TabIndex = 6;
             this.fieldCtrl108.Type = TR5TrainerTest.FieldType.Byte;
@@ -2805,9 +3015,9 @@
             this.fieldCtrl107.FieldName = "Puzzle item 6";
             this.fieldCtrl107.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl107.Format = null;
-            this.fieldCtrl107.Location = new System.Drawing.Point(581, 47);
+            this.fieldCtrl107.Location = new System.Drawing.Point(577, 46);
             this.fieldCtrl107.Name = "fieldCtrl107";
-            this.fieldCtrl107.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl107.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl107.Struct = "lara_info.puzzleitems+5";
             this.fieldCtrl107.TabIndex = 5;
             this.fieldCtrl107.Type = TR5TrainerTest.FieldType.Byte;
@@ -2821,9 +3031,9 @@
             this.fieldCtrl106.FieldName = "Puzzle item 5";
             this.fieldCtrl106.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl106.Format = null;
-            this.fieldCtrl106.Location = new System.Drawing.Point(292, 47);
+            this.fieldCtrl106.Location = new System.Drawing.Point(290, 46);
             this.fieldCtrl106.Name = "fieldCtrl106";
-            this.fieldCtrl106.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl106.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl106.Struct = "lara_info.puzzleitems+4";
             this.fieldCtrl106.TabIndex = 4;
             this.fieldCtrl106.Type = TR5TrainerTest.FieldType.Byte;
@@ -2837,9 +3047,9 @@
             this.fieldCtrl105.FieldName = "Puzzle item 4";
             this.fieldCtrl105.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl105.Format = null;
-            this.fieldCtrl105.Location = new System.Drawing.Point(3, 47);
+            this.fieldCtrl105.Location = new System.Drawing.Point(3, 46);
             this.fieldCtrl105.Name = "fieldCtrl105";
-            this.fieldCtrl105.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl105.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl105.Struct = "lara_info.puzzleitems+3";
             this.fieldCtrl105.TabIndex = 3;
             this.fieldCtrl105.Type = TR5TrainerTest.FieldType.Byte;
@@ -2853,9 +3063,9 @@
             this.fieldCtrl104.FieldName = "Puzzle item 3";
             this.fieldCtrl104.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl104.Format = null;
-            this.fieldCtrl104.Location = new System.Drawing.Point(581, 3);
+            this.fieldCtrl104.Location = new System.Drawing.Point(577, 3);
             this.fieldCtrl104.Name = "fieldCtrl104";
-            this.fieldCtrl104.Size = new System.Drawing.Size(285, 38);
+            this.fieldCtrl104.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl104.Struct = "lara_info.puzzleitems+2";
             this.fieldCtrl104.TabIndex = 2;
             this.fieldCtrl104.Type = TR5TrainerTest.FieldType.Byte;
@@ -2869,9 +3079,9 @@
             this.fieldCtrl103.FieldName = "Puzzle item 2";
             this.fieldCtrl103.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl103.Format = null;
-            this.fieldCtrl103.Location = new System.Drawing.Point(292, 3);
+            this.fieldCtrl103.Location = new System.Drawing.Point(290, 3);
             this.fieldCtrl103.Name = "fieldCtrl103";
-            this.fieldCtrl103.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl103.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl103.Struct = "lara_info.puzzleitems+1";
             this.fieldCtrl103.TabIndex = 1;
             this.fieldCtrl103.Type = TR5TrainerTest.FieldType.Byte;
@@ -2887,49 +3097,11 @@
             this.fieldCtrl102.Format = null;
             this.fieldCtrl102.Location = new System.Drawing.Point(3, 3);
             this.fieldCtrl102.Name = "fieldCtrl102";
-            this.fieldCtrl102.Size = new System.Drawing.Size(283, 38);
+            this.fieldCtrl102.Size = new System.Drawing.Size(281, 37);
             this.fieldCtrl102.Struct = "lara_info.puzzleitems+0";
             this.fieldCtrl102.TabIndex = 0;
             this.fieldCtrl102.Type = TR5TrainerTest.FieldType.Byte;
             this.fieldCtrl102.Value = ((long)(0));
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.tableLayoutPanel8);
-            this.tabPage9.Location = new System.Drawing.Point(4, 24);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(875, 363);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "tabPage9";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.ColumnCount = 3;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(337, 131);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 8;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel8.TabIndex = 4;
             // 
             // fieldCtrl13
             // 
@@ -2940,7 +3112,7 @@
             this.fieldCtrl13.Format = null;
             this.fieldCtrl13.Location = new System.Drawing.Point(3, 3);
             this.fieldCtrl13.Name = "fieldCtrl13";
-            this.fieldCtrl13.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl13.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl13.Struct = "ITEM_INFO.pos+12";
             this.fieldCtrl13.TabIndex = 16;
             this.fieldCtrl13.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2953,9 +3125,9 @@
             this.fieldCtrl14.FieldName = "Rotation Y";
             this.fieldCtrl14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl14.Format = null;
-            this.fieldCtrl14.Location = new System.Drawing.Point(292, 3);
+            this.fieldCtrl14.Location = new System.Drawing.Point(290, 3);
             this.fieldCtrl14.Name = "fieldCtrl14";
-            this.fieldCtrl14.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl14.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl14.Struct = "ITEM_INFO.pos+14";
             this.fieldCtrl14.TabIndex = 17;
             this.fieldCtrl14.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2968,9 +3140,9 @@
             this.fieldCtrl15.FieldName = "Rotation X";
             this.fieldCtrl15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl15.Format = null;
-            this.fieldCtrl15.Location = new System.Drawing.Point(581, 3);
+            this.fieldCtrl15.Location = new System.Drawing.Point(577, 3);
             this.fieldCtrl15.Name = "fieldCtrl15";
-            this.fieldCtrl15.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl15.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl15.Struct = "ITEM_INFO.pos+16";
             this.fieldCtrl15.TabIndex = 18;
             this.fieldCtrl15.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2983,9 +3155,9 @@
             this.fieldCtrl46.FieldName = "Head rotation X";
             this.fieldCtrl46.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl46.Format = null;
-            this.fieldCtrl46.Location = new System.Drawing.Point(3, 47);
+            this.fieldCtrl46.Location = new System.Drawing.Point(3, 46);
             this.fieldCtrl46.Name = "fieldCtrl46";
-            this.fieldCtrl46.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl46.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl46.Struct = "lara_info.head_x_rot";
             this.fieldCtrl46.TabIndex = 19;
             this.fieldCtrl46.Type = TR5TrainerTest.FieldType.UInt16;
@@ -2998,9 +3170,9 @@
             this.fieldCtrl47.FieldName = "Head rotation Y";
             this.fieldCtrl47.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl47.Format = null;
-            this.fieldCtrl47.Location = new System.Drawing.Point(292, 47);
+            this.fieldCtrl47.Location = new System.Drawing.Point(290, 46);
             this.fieldCtrl47.Name = "fieldCtrl47";
-            this.fieldCtrl47.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl47.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl47.Struct = "lara_info.head_y_rot";
             this.fieldCtrl47.TabIndex = 20;
             this.fieldCtrl47.Type = TR5TrainerTest.FieldType.UInt16;
@@ -3013,9 +3185,9 @@
             this.fieldCtrl48.FieldName = "Head rotation Z";
             this.fieldCtrl48.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl48.Format = null;
-            this.fieldCtrl48.Location = new System.Drawing.Point(581, 47);
+            this.fieldCtrl48.Location = new System.Drawing.Point(577, 46);
             this.fieldCtrl48.Name = "fieldCtrl48";
-            this.fieldCtrl48.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl48.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl48.Struct = "lara_info.head_z_rot";
             this.fieldCtrl48.TabIndex = 21;
             this.fieldCtrl48.Type = TR5TrainerTest.FieldType.UInt16;
@@ -3028,9 +3200,9 @@
             this.fieldCtrl49.FieldName = "Torso rotation X";
             this.fieldCtrl49.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl49.Format = null;
-            this.fieldCtrl49.Location = new System.Drawing.Point(3, 91);
+            this.fieldCtrl49.Location = new System.Drawing.Point(3, 89);
             this.fieldCtrl49.Name = "fieldCtrl49";
-            this.fieldCtrl49.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl49.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl49.Struct = "lara_info.torso_x_rot";
             this.fieldCtrl49.TabIndex = 22;
             this.fieldCtrl49.Type = TR5TrainerTest.FieldType.UInt16;
@@ -3043,9 +3215,9 @@
             this.fieldCtrl50.FieldName = "Torso rotation Y";
             this.fieldCtrl50.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl50.Format = null;
-            this.fieldCtrl50.Location = new System.Drawing.Point(292, 91);
+            this.fieldCtrl50.Location = new System.Drawing.Point(290, 89);
             this.fieldCtrl50.Name = "fieldCtrl50";
-            this.fieldCtrl50.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl50.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl50.Struct = "lara_info.torso_y_rot";
             this.fieldCtrl50.TabIndex = 23;
             this.fieldCtrl50.Type = TR5TrainerTest.FieldType.UInt16;
@@ -3058,9 +3230,9 @@
             this.fieldCtrl51.FieldName = "Torso rotation Z";
             this.fieldCtrl51.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl51.Format = null;
-            this.fieldCtrl51.Location = new System.Drawing.Point(581, 91);
+            this.fieldCtrl51.Location = new System.Drawing.Point(577, 89);
             this.fieldCtrl51.Name = "fieldCtrl51";
-            this.fieldCtrl51.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl51.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl51.Struct = "lara_info.torso_z_rot";
             this.fieldCtrl51.TabIndex = 24;
             this.fieldCtrl51.Type = TR5TrainerTest.FieldType.UInt16;
@@ -3073,9 +3245,9 @@
             this.fieldCtrl126.FieldName = "Turn rate";
             this.fieldCtrl126.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl126.Format = null;
-            this.fieldCtrl126.Location = new System.Drawing.Point(3, 135);
+            this.fieldCtrl126.Location = new System.Drawing.Point(3, 132);
             this.fieldCtrl126.Name = "fieldCtrl126";
-            this.fieldCtrl126.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl126.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl126.Struct = "lara_info.turn_rate";
             this.fieldCtrl126.TabIndex = 25;
             this.fieldCtrl126.Type = TR5TrainerTest.FieldType.UInt16;
@@ -3088,129 +3260,22 @@
             this.fieldCtrl127.FieldName = "Move angle";
             this.fieldCtrl127.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fieldCtrl127.Format = null;
-            this.fieldCtrl127.Location = new System.Drawing.Point(292, 135);
+            this.fieldCtrl127.Location = new System.Drawing.Point(290, 132);
             this.fieldCtrl127.Name = "fieldCtrl127";
-            this.fieldCtrl127.Size = new System.Drawing.Size(283, 33);
+            this.fieldCtrl127.Size = new System.Drawing.Size(281, 33);
             this.fieldCtrl127.Struct = "lara_info.move_angle";
             this.fieldCtrl127.TabIndex = 26;
             this.fieldCtrl127.Type = TR5TrainerTest.FieldType.UInt16;
             this.fieldCtrl127.Value = ((long)(0));
             // 
-            // checkBox4
+            // rtbVert
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(778, 36);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(93, 19);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "Lock camera";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // fieldCtrl128
-            // 
-            this.fieldCtrl128.Address = "0xe5bd60";
-            this.fieldCtrl128.Bit = -1;
-            this.fieldCtrl128.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fieldCtrl128.FieldName = "Gun status";
-            this.fieldCtrl128.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fieldCtrl128.Format = null;
-            this.fieldCtrl128.Location = new System.Drawing.Point(3, 218);
-            this.fieldCtrl128.Name = "fieldCtrl128";
-            this.fieldCtrl128.Size = new System.Drawing.Size(281, 37);
-            this.fieldCtrl128.Struct = "lara_info.gun_status";
-            this.fieldCtrl128.TabIndex = 15;
-            this.fieldCtrl128.Type = TR5TrainerTest.FieldType.Int16;
-            this.fieldCtrl128.Value = ((long)(0));
-            // 
-            // fieldCtrl129
-            // 
-            this.fieldCtrl129.Address = "0xe5bd60";
-            this.fieldCtrl129.Bit = -1;
-            this.fieldCtrl129.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fieldCtrl129.FieldName = "Gun type";
-            this.fieldCtrl129.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fieldCtrl129.Format = null;
-            this.fieldCtrl129.Location = new System.Drawing.Point(290, 218);
-            this.fieldCtrl129.Name = "fieldCtrl129";
-            this.fieldCtrl129.Size = new System.Drawing.Size(281, 37);
-            this.fieldCtrl129.Struct = "lara_info.gun_type";
-            this.fieldCtrl129.TabIndex = 16;
-            this.fieldCtrl129.Type = TR5TrainerTest.FieldType.Int16;
-            this.fieldCtrl129.Value = ((long)(0));
-            // 
-            // fieldCtrl130
-            // 
-            this.fieldCtrl130.Address = "0xe5bd60";
-            this.fieldCtrl130.Bit = -1;
-            this.fieldCtrl130.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fieldCtrl130.FieldName = "Request gun type";
-            this.fieldCtrl130.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fieldCtrl130.Format = null;
-            this.fieldCtrl130.Location = new System.Drawing.Point(577, 218);
-            this.fieldCtrl130.Name = "fieldCtrl130";
-            this.fieldCtrl130.Size = new System.Drawing.Size(281, 37);
-            this.fieldCtrl130.Struct = "lara_info.request_gun_type";
-            this.fieldCtrl130.TabIndex = 17;
-            this.fieldCtrl130.Type = TR5TrainerTest.FieldType.Int16;
-            this.fieldCtrl130.Value = ((long)(0));
-            // 
-            // fieldCtrl131
-            // 
-            this.fieldCtrl131.Address = "0xe5bd60";
-            this.fieldCtrl131.Bit = -1;
-            this.fieldCtrl131.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fieldCtrl131.FieldName = "Last gun type";
-            this.fieldCtrl131.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fieldCtrl131.Format = null;
-            this.fieldCtrl131.Location = new System.Drawing.Point(3, 261);
-            this.fieldCtrl131.Name = "fieldCtrl131";
-            this.fieldCtrl131.Size = new System.Drawing.Size(281, 37);
-            this.fieldCtrl131.Struct = "lara_info.last_gun_type";
-            this.fieldCtrl131.TabIndex = 18;
-            this.fieldCtrl131.Type = TR5TrainerTest.FieldType.Int16;
-            this.fieldCtrl131.Value = ((long)(0));
-            // 
-            // fieldCtrl132
-            // 
-            this.fieldCtrl132.Address = "0xe5bd60";
-            this.fieldCtrl132.Bit = -1;
-            this.fieldCtrl132.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fieldCtrl132.FieldName = "Holster";
-            this.fieldCtrl132.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fieldCtrl132.Format = null;
-            this.fieldCtrl132.Location = new System.Drawing.Point(290, 261);
-            this.fieldCtrl132.Name = "fieldCtrl132";
-            this.fieldCtrl132.Size = new System.Drawing.Size(281, 37);
-            this.fieldCtrl132.Struct = "lara_info.holster";
-            this.fieldCtrl132.TabIndex = 19;
-            this.fieldCtrl132.Type = TR5TrainerTest.FieldType.UInt16;
-            this.fieldCtrl132.Value = ((long)(0));
-            // 
-            // fieldCtrl133
-            // 
-            this.fieldCtrl133.Address = "0xe5bf04";
-            this.fieldCtrl133.Bit = -1;
-            this.fieldCtrl133.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fieldCtrl133.FieldName = "Sprint timer";
-            this.fieldCtrl133.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fieldCtrl133.Format = null;
-            this.fieldCtrl133.Location = new System.Drawing.Point(3, 307);
-            this.fieldCtrl133.Name = "fieldCtrl133";
-            this.fieldCtrl133.Size = new System.Drawing.Size(281, 39);
-            this.fieldCtrl133.Struct = "";
-            this.fieldCtrl133.TabIndex = 25;
-            this.fieldCtrl133.Type = TR5TrainerTest.FieldType.UInt16;
-            this.fieldCtrl133.Value = ((long)(0));
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(4, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 32);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "All weapons";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.rtbVert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbVert.Location = new System.Drawing.Point(3, 3);
+            this.rtbVert.Name = "rtbVert";
+            this.rtbVert.Size = new System.Drawing.Size(424, 118);
+            this.rtbVert.TabIndex = 0;
+            this.rtbVert.Text = "";
             // 
             // MainWindow
             // 
@@ -3243,9 +3308,11 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tabPage9.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3423,7 +3490,6 @@
         public FieldCtrl fieldCtrl126;
         public FieldCtrl fieldCtrl127;
         private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.CheckBox checkBox4;
         private FieldCtrl fieldCtrl132;
         private FieldCtrl fieldCtrl131;
@@ -3432,6 +3498,13 @@
         private FieldCtrl fieldCtrl128;
         private FieldCtrl fieldCtrl133;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.RichTextBox rtbViewMatrix;
+        private System.Windows.Forms.RichTextBox rtbW2VMatrix;
+        private System.Windows.Forms.RichTextBox rtbProjMatrix;
+        private System.Windows.Forms.RichTextBox rtbWorldMatrix;
+        private System.Windows.Forms.RichTextBox rtbVert;
     }
 }
 
